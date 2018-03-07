@@ -183,7 +183,7 @@ label {
 }
 
 .navbar-default .navbar-brand label {
-    color: #37bf91;
+    color: #2310f2;
     display: block;
     font-size: 10px;
     text-align: center;
@@ -226,11 +226,11 @@ label {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #37BF91;
+    background-color: #2310f2;
 }
 
 .navbar-default .navbar-nav>.active>a:before {
-    background: #37BF91;
+    background: #2310f2;
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -294,7 +294,7 @@ label {
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:hover,
 .dropdown-menu>.active>a:focus {
-    color: #EF5861;
+    color: #f2170b;
     background-color: #fff;
 }
 
@@ -312,7 +312,7 @@ label {
 
 .multi-column-dropdown li a:hover {
     text-decoration: none;
-    color: #23B684;
+    color: #2310f2;
     background: none;
 }
 
@@ -382,7 +382,7 @@ label {
 
 .carousel-caption h2 span,
 .carousel-caption h3 span {
-    color: #ef5861;
+    color: #f2170b;
 }
 
 .carousel-caption {
@@ -439,7 +439,7 @@ h3.tittle {
 }
 
 h3.tittle span {
-    color: #ef5861;
+    color: #cb1906;
 }
 
 .tittle-style {
@@ -458,7 +458,7 @@ h3.tittle span {
 
 .tittle-style:after {
     content: "";
-    background: #ef5861;
+    background: #cb1906;
     width: 3%;
     height: 5px;
     position: absolute;
@@ -478,7 +478,7 @@ h3.tittle span {
 
 .banner_bottom_left h4 {
     font-size: 2em;
-    color: #262c38;
+    color: #cb1906;
     letter-spacing: 1px;
     margin-bottom: 20px;
     font-weight: 600;
@@ -496,7 +496,7 @@ h3.tittle span {
 
 .banner_bottom_left p:nth-child(3) {
     margin-bottom: 0;
-    border-top: 2px solid #ef5861;
+    border-top: 2px solid #1a3d88;
     padding-top: 13px;
 }
 
@@ -577,7 +577,7 @@ h3.tittle span {
 }
 
 .services {
-    background: #edecef;
+    background: rgba(255, 255, 255, 0);
     text-align: center;
     margin-top: -7em;
 }
@@ -587,22 +587,22 @@ h3.tittle span {
 }
 
 .services h3.tittle span {
-    color: #fff;
+    color: #cb1906;
 }
 
 .services .tittle-style:after {
     left: 9%;
-    background: #37BF91;
+    background: #ffffff;
 }
 
 .services .tittle-style:before {
     left: 7%;
-    background: #fff;
+    background: rgba(255, 255, 255, 0);
 }
 
 .services-grids-w3l span {
     font-size: 40px;
-    color: #37BF91;
+    color: #cb1906;
     -webkit-transition: .5s all;
     -moz-transition: .5s all;
     transition: .5s all;
@@ -611,7 +611,7 @@ h3.tittle span {
 }
 
 .services-grids-w3l h4 {
-    color: #fff;
+    color: #2310f2;
     font-size: 20px;
     margin: 20px 0 10px;
     -webkit-transition: .5s all;
@@ -623,12 +623,12 @@ h3.tittle span {
 
 .services-grids-w3l p {
     padding: 0 2em;
-    color: #dedede;
+    color: #cb1906;
     font-size: 14px;
 }
 
 .services-grids-w3l:hover span {
-    color: #000;
+    color: #2310f2;
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
@@ -649,7 +649,7 @@ h3.tittle span {
 }
 
 .servi-shadow {
-    border: 2px solid #fff;
+    border: 2px solid #2310f2;
     padding: 2.5em 0;
     -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.75);
@@ -686,35 +686,35 @@ h3.tittle span {
 }
 
 .color-event1 {
-    background: #FC9928;
+    background: #f2170b;
 }
 
 .color-event2 {
-    background: #2da0ff;
+    background: #2310f2;
 }
 
 .color-event3 {
-    background: #E91E63;
+    background: #f2170b;
 }
 
 .color-event4 {
-    background: #12e8b4;
+    background: #2310f2;
 }
 
 .text-color1 a {
-    color: #FC9928;
+    color: #f2170b;
 }
 
 .text-color2 a {
-    color: #2da0ff;
+    color: #2310f2;
 }
 
 .text-color3 a {
-    color: #E91E63;
+    color: #f2170b;
 }
 
 .text-color4 a {
-    color: #12e8b4;
+    color: #2310f2;
 }
 
 .date-grid {
@@ -813,7 +813,7 @@ h3.tittle span {
 
 .three_testimonials_grid1 h5 {
     font-size: 24px;
-    color: #ef5861;
+    color: #f2170b;
     letter-spacing: 1px;
 }
 
@@ -894,12 +894,12 @@ h3.tittle span {
 
 .nbs-flexisel-nav-left {
     left: 0;
-    background: url(../images/right.png) no-repeat 10px 11px #37BF91;
+    background: url(../images/right.png) no-repeat 10px 11px #2310f2;
 }
 
 .nbs-flexisel-nav-right {
     right: 0;
-    background: url(../images/left.png) no-repeat 14px 12px #37BF91;
+    background: url(../images/left.png) no-repeat 14px 12px #2310f2;
 }
 
 
@@ -935,7 +935,7 @@ h3.tittle span {
 }
 
 .middle-sec-agile h4 span {
-    color: #ef5861;
+    color: #f2170b;
 }
 
 .middle-sec-agile ul li {
@@ -956,7 +956,7 @@ h3.tittle span {
 }
 
 .midle-left-w3l span {
-    color: #ef5861;
+    color: #f2170b;
     font-size: 26px;
 }
 
@@ -974,7 +974,7 @@ h3.tittle span {
 
 a.button-style {
     color: #fff;
-    background: #37BF91;
+    background: #2310f2;
     border: none;
     padding: 10px 31px;
     letter-spacing: 1px;
@@ -989,7 +989,7 @@ a.button-style {
 }
 
 a.button-style:hover {
-    background: #ef5861;
+    background: #f2170b;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1031,7 +1031,7 @@ a.button-style:hover {
 
 .mkls_footer_grid_left p a {
     text-decoration: none;
-    color: #ef5861;
+    color: #f2170b;
 }
 
 .mkls_footer_grid_left p a:hover {
@@ -1064,7 +1064,7 @@ a.button-style:hover {
 }
 
 .botttom-nav-allah ul li a:hover {
-    color: #37BF91;
+    color: #0a0bf3;
 }
 
 .footer-middle-thanks h2 {
@@ -1100,7 +1100,7 @@ a.button-style:hover {
 
 .footer-copy-right p a:hover {
     text-decoration: none;
-    color: #0099e5;
+    color: #2310f2;
 }
 
 .footercopy-social {
@@ -1131,7 +1131,7 @@ a.button-style:hover {
 }
 
 .footercopy-social ul li a span.fa.fa-twitter {
-    background: #1da1f2;
+    background: #2310f2;
 }
 
 .footercopy-social ul li a span.fa.fa-twitter:hover {
@@ -1139,7 +1139,7 @@ a.button-style:hover {
 }
 
 .footercopy-social ul li a span.fa.fa-rss {
-    background: #f26522;
+    background: #f2170b;
 }
 
 .footercopy-social ul li a span.fa.fa-rss:hover {
@@ -1147,7 +1147,7 @@ a.button-style:hover {
 }
 
 .footercopy-social ul li a span.fa.fa-vk {
-    background: #45668e;
+    background: #2310f2;
 }
 .footercopy-social ul li a span{
     height: 40px;
@@ -1257,7 +1257,7 @@ ul.short_ls li a {
 }
 
 .about_bottom_left h4 span {
-    color: #37BF91;
+    color: #0a0bf3;
 }
 
 .about_bottom_left p {
@@ -1271,7 +1271,7 @@ ul.short_ls li a {
 }
 
 .banner_bottom_left h4 span {
-    color: #37BF91;
+    color: #0a0bf3;
 }
 
 .about2-info {
@@ -1313,7 +1313,7 @@ li.aitsaitsresumewthreeli-1 {
 
 .work-info h4 {
     font-size: 1.2em;
-    background: #37BF91;
+    background: #0a0bf3;
     display: inline-block;
     padding: 12px 30px;
     color: #fff;
@@ -1329,7 +1329,7 @@ li.aitsaitsresumewthreeli-1 {
     right: -14px;
     border-style: solid;
     border-width: 10px 0 10px 16px;
-    border-color: transparent transparent transparent #37BF91;
+    border-color: transparent transparent transparent #0a0bf3;
 }
 
 .work-info h5 {
@@ -1381,7 +1381,7 @@ li.aitsaitsresumewthreeli-1 {
 }
 
 .team h4 {
-    color: #37BF91;
+    color: #0a0bf3;
     font-size: 22px;
 }
 
@@ -1401,7 +1401,7 @@ li.aitsaitsresumewthreeli-1 {
 }
 
 .social-lsicon a:hover {
-    color: #ef5861;
+    color: #f2170b;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -1424,7 +1424,7 @@ li.aitsaitsresumewthreeli-1 {
 }
 
 .blog-grid-text h4 {
-    color: #ef5861;
+    color: #f2170b;
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1482,7 +1482,7 @@ label.header {
 .register-form input[type="submit"] {
     outline: none;
     color: #FFF;
-    background: #37BF91;
+    background: #0a0bf3;
     color: #fff;
     border: none;
     padding: 11px 40px;
@@ -1498,7 +1498,7 @@ label.header {
 }
 
 .register-form input[type="submit"]:hover {
-    background: #ef5861;
+    background: #f2170b;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1590,11 +1590,11 @@ label.header {
 }
 
 .contact-text1 h4 span {
-    color: #37BF91;
+    color: #2310f2;
 }
 
 .contact-text1 p {
-    border-bottom: 2px solid #ef5861;
+    border-bottom: 2px solid #f2170b;
     padding-bottom: 25px;
 }
 
@@ -1772,7 +1772,7 @@ label.header {
 }
 
 input.checkbox {
-    background: #37BF91;
+    background: #2310f2;
     cursor: pointer;
 }
 
@@ -1843,7 +1843,7 @@ input[type="checkbox"] {
 .login-form input[type="submit"] {
     font-size: 16px;
     color: #fff;
-    background: #ef5861;
+    background: #f2170b;
     border: none;
     outline: none;
     cursor: pointer;
@@ -1888,7 +1888,7 @@ input[type="checkbox"] {
 }
 
 .login-agileits-bottom h6 a:hover {
-    color: #ef5861;
+    color: #f2170b;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1902,8 +1902,8 @@ input[type="checkbox"] {
 }
 
 .register-forming p a {
-    color: #37BF91;
-    border-bottom: 1px dotted #37BF91;
+    color: #2310f2;
+    border-bottom: 1px dotted #2310f2;
     font-weight: 600;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -2001,7 +2001,7 @@ input[type="checkbox"] {
 
 h3.icon-subheading {
     font-size: 28px;
-    color: #37BF91 !important;
+    color: #2310f2 !important;
     margin: 30px 0 15px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -2201,7 +2201,7 @@ h3.m_1 {
 h3.hdg,
 h3.bars {
     margin-bottom: 1em;
-    color: #37BF91;
+    color: #2310f2;
     font-weight: 600;
     font-size: 30px;
     letter-spacing: 2px;
@@ -2231,19 +2231,19 @@ h3.bars {
 }
 
 .badge-primary {
-    background-color: #03a9f4;
+    background-color: #2310f2;
 }
 
 .badge-success {
-    background-color: #22cdf3;
+    background-color: #2310f2;
 }
 
 .badge-warning {
-    background-color: #ffc107;
+    background-color: #f2170b;
 }
 
 .badge-danger {
-    background-color: #e51c23;
+    background-color: #f2170b;
 }
 
 .grid_3 p {
@@ -3091,7 +3091,7 @@ h3.title-w3l.w3l-2:before {
         background-color: transparent;
     }
     .navbar-default .navbar-toggle .icon-bar {
-        background-color: #EF5861;
+        background-color: #f2170b;
     }
     .navbar-default .navbar-toggle {
         margin: 7px 20px;
@@ -3116,7 +3116,7 @@ h3.title-w3l.w3l-2:before {
         color: #fff;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #EF5861;
+        color: #f2170b;
     }
 }
 

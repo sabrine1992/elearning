@@ -1,0 +1,297 @@
+{% extends'::base.html.twig' %}
+{% block body %}
+    <div class="header-top">
+        <div class="container">
+            <div class="bottom_header_left">
+                <p>
+                    <span class="fa fa-map-marker" aria-hidden="true"></span>Pépinière d'Entreprises bureau n°4 à côté de l'ISET de Beja
+                </p>
+            </div>
+            <div class="bottom_header_right">
+                <div class="bottom-social-icons">
+                    <a class="facebook" href="#">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="twitter" href="#">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a class="pinterest" href="#">
+                        <span class="fa fa-pinterest-p"></span>
+                    </a>
+                    <a class="linkedin" href="#">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                </div>
+                <div class="header-top-righ">
+                    <a href="{{ path('connexion') }}">
+                        <span class="fa fa-sign-out" aria-hidden="true"></span>Connexion</a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="content white">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{ path('index') }}" >
+                            <img src="{{asset('elearning/images/logo.png')}}" width="150" height="55">
+                        </a>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <nav class="link-effect-2" id="link-effect-2">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="{{ path('index') }}"class="effect-3">Accueil</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('presentation') }}" class="effect-3">A propos</a>
+                                </li>
+
+
+                                <li class="dropdown">
+                                    <a href="{{ path('formation') }}" class="dropdown-toggle" data-toggle="dropdown">Formation
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="{{ path('catalogue') }}">Catalogue Formation</a>
+                                        </li>
+                                        <li>
+                                            <a href="codes.html">Calendrier Formation</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="{{ path('gallerie') }}" class="effect-3">Gallerie</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('contacter') }}" class="effect-3">Contact</a>
+                                </li>
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="search">
+                                                <input type="text" class="form-control input-sm" maxlength="64" placeholder="Chercher" />
+                                                <button type="submit" class="btn btn-primary btn-sm">Chercher</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--/.navbar-collapse-->
+                    <!--/.navbar-->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="inner_page_agile">
+
+    </div>
+    <!--//banner -->
+    <!-- short-->
+    <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+            <ul class="short_ls">
+                <li>
+                    <a href="{{ path('index') }}">Accueil</a>
+                    <span>| |</span>
+                </li>
+                <li>Inscrire Formation</li>
+            </ul>
+        </div>
+    </div>
+    <!-- //short-->
+    <div class="register-form-main">
+        <div class="container">
+            <div class="title-div">
+                <h3 class="tittle">
+                    <span>I</span>nscrivez-
+                    <span>V</span>ous
+                </h3>
+                <div class="tittle-style">
+
+                </div>
+            </div>
+            <div class="register-form">
+                <form action="#" method="post">
+                    <div class="fields-grid">
+                        <div class="styled-input">
+                            <input type="text" placeholder="Nom" name="Your name" required="">
+                        </div>
+                        <div class="styled-input">
+                            <input id="datepicker" placeholder="Date de naissance" name="Text" type="Text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+                                   required="">
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            <select class="category2" required="">
+                                <option value="">Genre</option>
+                                <option value="">Femme</option>
+                                <option value="">Homme</option>
+
+                            </select>
+                        </div>
+                        <div class="styled-input">
+                            <input type="email" placeholder="E-mail" name="Email" required="">
+                        </div>
+                        <div class="styled-input">
+                            <input type="text" placeholder="Numéro Téléphone" name="Phone" required="">
+                        </div>
+                        <div class="styled-input agile-styled-input-top">
+                            <select class="category2" required="">
+                                <option value="">Sélectionnez une formation</option>
+                                <option value="">ANDROID</option>
+                                <option value="">CISCO </option>
+                                <option value="">BUREAUTIQUE MICROSOFT OFFICE : WORD-EXCEL-POWERPOINT-OUTLOOK </option>
+                                <option value="">JAVA J2EE </option>
+                                <option value="">WORDPRESS </option>
+                                <option value="">INFOGRAPHIE </option>
+                                <option value="">ORACLE EXPERT SQL</option>
+                            </select>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <div class="agileits_w3layouts_grid">
+                                <select class="category2" name="category1" required="">
+                                    <option value="">Categorie</option>
+                                    <option value="">Etudiant</option>
+                                    <option value="">Enseignant</option>
+                                    <option value="">Emploiyer</option>
+                                    <option value="">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="styled-input">
+                            <input type="Text" placeholder="Description" name="Description" required="">
+                        </div>
+                        <div class="styled-input">
+                            <label class="header">Votre adresse</label>
+                            <div class="">
+                                <input type="text" name="name" placeholder="Votre Adresse" title="Please enter your Address" required="">
+                            </div>
+                            <div class="">
+                                <input type="text" name="name" placeholder="Votre rue" title="Please enter your Line" required="">
+                            </div>
+                            <div class="">
+                                <input type="text" name="name" placeholder="Votre Ville" title="Please enter your City" required="">
+                            </div>
+                            <div class="">
+                                <input type="text" name="name" placeholder="Votre Code postal" title="Please enter your Zip code" required="">
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <input type="submit" value="Inscrire">
+                    <input type="reset" value="Annuler">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="mkl_footer">
+        <div class="sub-footer">
+            <div class="container">
+                <div class="mkls_footer_grid">
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Location:</h4>
+                        <p>Pépinière d'Entreprises bureau n°4 à côté de
+                            <br>  l'ISET de Beja</p>
+                    </div>
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Mail Us:</h4>
+                        <p>
+                            <span>Tel : </span>(+216) 56 068 828 / 55 36 36 54</p>
+                        <p>
+                            <span>Email : </span>
+                            <a href="mailto:info@example.com">contact@innovasys.com.tn </a>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Heures d'ouverture:</h4>
+                        <p>Jours de travail: 8h-18h</p>
+                        <p>dimanche
+                            <span>(Fermé)</span>
+                        </p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="botttom-nav-allah">
+                    <ul>
+                        <li>
+                            <a href="{{ path('index') }}">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('presentation') }}">Présentation</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('catalogue') }}">Catalogue Formation</a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('calendrier') }}">Calendrir Formation</a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('gallerie') }}">Gallerie</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('contacter') }}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- footer-button-info -->
+                <div class="footer-middle-thanks">
+                    <h2>Merci d'avoir regardé </h2>
+                </div>
+                <!-- footer-button-info -->
+            </div>
+        </div>
+        <div class="footer-copy-right">
+            <div class="container">
+                <div class="allah-copy">
+                    <p>© 2018 Meilleure formation. Tous les droits sont réservés | Concu par
+                        <a href="http://w3layouts.com/">Njoumi Sabrine&& Amri Chayma</a>
+                    </p>
+                </div>
+                <div class="footercopy-social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-rss"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

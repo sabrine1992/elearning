@@ -1,0 +1,233 @@
+{%extends'::base1.html.twig' %}
+{% block body %}
+<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-1.jpg">
+        <!--
+    Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+    Tip 2: you can also add an image using data-image tag
+-->
+        <div class="logo">
+            <a href="{{ path('index') }}">Accueil</a>
+            <span>|</span>
+            <a href="{{ path('catalogue') }}">Catalogue Formation</a>
+        </div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li class="active">
+                    <a href="#">
+                        <i class="material-icons">library_books</i>
+                        <p>planing</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('formateurwordpress') }}">
+                        <i class="material-icons">person</i>
+                        <p>le (s) formateur (s)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('prixwordpress') }}">
+                        <i class="material-icons">content_paste</i>
+                        <p>Prix</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./icons.html">
+                        <i class="material-icons">bubble_chart</i>
+                        <p>Financement</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('dureewordpress') }}">
+                        <i class="material-icons text-gray">notifications</i>
+                        <p>Durée</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./maps.html">
+                        <i class="material-icons">location_on</i>
+                        <p>Maps</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel">
+        <nav class="navbar navbar-transparent navbar-absolute">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group  is-empty">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="material-input"></span>
+                        </div>
+                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                            <i class="material-icons">search</i>
+                            <div class="ripple-container"></div>
+                        </button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <nav class="link-effect-2" id="link-effect-2">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="{{ path('index') }}">
+                                        <i class="material-icons">library_books</i>
+                                        <p>Accueil</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('catalogue') }}">
+                                        <i class="material-icons">library_books</i>
+                                        <p>Catalogue Formation</p>
+                                    </a>
+                                </li>
+                                <li><a href="{{ path('connexion') }}">
+                                        <i class="material-icons">person</i>
+                                        <p>connexion</p>
+                                    </a>
+                                </li>
+                                <li><a href="{{ path('inscrire') }}">
+                                        <i class="material-icons">person</i>
+                                        <p>s'inscrire</p>
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header" data-background-color="blue">
+                                <h4 class="title">Formation wordpress</h4>
+                            </div>
+                            <div class="card-content">
+                                <div id="typography">
+                                    <div class="title">
+                                        <h2>Les objectifs</h2>
+                                        <ul><li>Découvrir les fonctionnalités d’Android pour smartphones et tablettes</li>
+
+                                            <li>Réaliser ses premières applications en respectant les notions UI Android</li>
+
+                                            <li>Assurer la communication entre une application Android et une partie tierce</li>
+
+                                            <li>Développer une application mobile de A->Z</li>
+                                        </ul>
+                                        <h2>Programme de formation</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="title">
+                                            <h2><u>Jour 1</u></h2>
+                                            <ul><li>Pourquoi développer des applications mobiles ?</li>
+
+                                                <li>Pourquoi Android ?</li>
+
+                                                <li>Présentation générale d'Android</li>
+
+                                                <li>Architecture générale du système d'exploitation</li>
+
+                                                <li>Installation de l'environnement de développement (Eclipse, ADT Bundle, Android Studio) et présentation de l'environnement Eclipse.</li>
+
+                                                    <li>Présentation et utilisation de genymotion un émulateur Android très performant.</li>
+
+                                                <li>Description de la structure d'une application Android</li>
+
+                                                <li>Création d'un Hello World sur Android</li>
+
+                                                <li>Tester don développement etoutils disponibles avec le SDK -Création des interactions utilisateurs dans une application Android</li>
+
+                                                <li>Développer une application mobile de A->Z</li>
+                                            </ul>
+                                        </div>
+                                        <div class="title">
+                                            <h2><u>Jour 2</u></h2>
+                                            <ul><li>Les composants de base d'une application Android</li>
+
+                                                <li>Cycle de vie d'une activité Android</li>
+
+                                                <li>Ressources statiques d'une application Android ( layout, drawable, strings, colors, arrays, …).</li>
+
+                                                <li>Les éléments graphiques simples et complexes</li>
+
+                                                <li>Création d'une première interface en se basant sur les LinearLayout</li>
+
+                                                <li>Création d'une première interface en se basant sur les RelativeLayout</li>
+
+                                                <li>Gestion de l'internationalisation en se basant sur les ressources statiques d'une application Android.</li>
+
+                                                <li>Communication entre les activités dans une application Android.</li>
+
+                                                <li>TP 1 : Utilisation des ListView et des TextWatcher dans une application Android.</li>
+
+                                                <li>TP 2 : Mise en place d'un écran de paramétrage de l'application et utilisation des préférences d'une application Android.</li>
+                                                <li>TP 3 : Google maps V2</li>
+                                                <li>Les bonnes pratiques de développement Android ( création d'interface, expérience utilisateur,...)</li>
+                                            <li>Exploitation de Google Play et publication d'une application sur le store officiel d'Android ( création d'un keystore, exportation d'un apk signé, préparation de la fiche de Google Play,...).</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="title">
+                                            <h2><u>Jour 3</u></h2>
+                                            <ul><li>Utilisation des Fragments dans une application Android.</li>
+
+                                                <li>Thread, Async Task, service, Handler</li>
+
+                                                <li>Mise en place d'un service permettant la géolocalisation de l'utilisateur.</li>
+
+                                                <li>Consommation d'unun serveur et consommation d'un web service REST/JSON en exploitant la puissance de la bibliothèque Gson.</li>
+
+                                                <li>Présentation de RoboGuice.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="title">
+                                            <h2><u>Jour 4</u></h2>
+                                            <p>Mise en place d'une application Android complète contenant :</p>
+
+                                            <ul><li> Splash Screen</li>
+
+                                                <li>Interface d'authentification liée à une base de donnée MySql via web services PHP/REST/JSON</li>
+
+                                                <li>Mise en place d'un ActionBar en se basant sur ActionBarSherlock.</li>
+
+                                                <li>Géolocalisation.</li>
+
+                                                <li>Affichage d'un ensemble de POI sur GoogleMapsV2 en intégrant un système de cluster</li>
+
+                                                <li>Affichage en mode Liste personnalisée des pois.</li>
+
+                                                <li>Utilisation du SharedProvider du SDK pour le partage sur les réseaux sociaux</li>
+                                            </ul>
+                                        </div>
+                                        <div class="title">
+                                            <h2><u>Jour 5</u></h2>
+
+
+                                            <ul><li>Mise en place d'un Sliding Menu</li>
+
+                                                <li>Stockage des données dans une base de données Sqlite par l'intermédiaire d'un ORM (OrmLite).</li>
+
+                                                <li>Intégration de Open Street Map dans une application Android (une alternative Open Source de Google Maps)</li>
+
+                                                <li>Présentation des bibliothèques Android Open Source.</li>
+
+
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,151 @@
+{%extends'::base1.html.twig' %}
+{% block body %}
+<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-1.jpg">
+        <!--
+    Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+    Tip 2: you can also add an image using data-image tag
+-->
+        <div class="logo">
+            <a href="{{ path('index') }}">Accueil</a>
+            <span>|</span>
+            <a href="{{ path('catalogue') }}">Catalogue Formation</a>
+        </div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li>
+                    <a href="{{ path('formationoracle') }}">
+                        <i class="material-icons">library_books</i>
+                        <p>planing</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('formateuroracle') }}">
+                        <i class="material-icons">person</i>
+                        <p>le (s) formateur (s)</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{{ path('prixoracle') }}">
+                        <i class="material-icons">content_paste</i>
+                        <p>Prix</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./icons.html">
+                        <i class="material-icons">bubble_chart</i>
+                        <p>Financement</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('dureeoracle') }}">
+                        <i class="material-icons text-gray">notifications</i>
+                        <p>Durée</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./maps.html">
+                        <i class="material-icons">location_on</i>
+                        <p>Maps</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel">
+        <nav class="navbar navbar-transparent navbar-absolute">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group  is-empty">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="material-input"></span>
+                        </div>
+                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                            <i class="material-icons">search</i>
+                            <div class="ripple-container"></div>
+                        </button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <nav class="link-effect-2" id="link-effect-2">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="{{ path('index') }}">
+                                        <i class="material-icons">library_books</i>
+                                        <p>Accueil</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('catalogue') }}">
+                                        <i class="material-icons">library_books</i>
+                                        <p>Catalogue Formation</p>
+                                    </a>
+                                </li>
+                                <li><a href="{{ path('connexion') }}">
+                                        <i class="material-icons">person</i>
+                                        <p>connexion</p>
+                                    </a>
+                                </li>
+                                <li><a href="{{ path('inscrire') }}">
+                                        <i class="material-icons">person</i>
+                                        <p>s'inscrire</p>
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="tab-pane col-sm-12 " id="prix">
+<h1>prix de formation</h1>
+                                    <br>
+
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th><h3><strong>Public</strong> </h3> </th>
+                                            <th><h3><strong>Formation</strong> </h3> </th>
+                                            <!--      <th><h3><strong>Examen</strong> </h3> </th> -->
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        <tr>
+                                            <td><h3>Entreprise</h3> </td>
+                                            <td><h3>Nous contacter </h3> </td>
+                                            <!--      <td><h3> 0 dinars  </h3> </td> -->
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><h3>Professionel</h3> </td>
+                                            <td><h3> dinars  </h3> </td>
+                                            <!--        <td><h3> 0 dinars   </h3> </td> -->
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><h3>Etudiant ou chercheur d'emploi</h3> </td>
+                                            <td><h3> 120 dinars  </h3> </td>
+                                            <!--            <td><h3>0 dinars   </h3> </td> -->
+                                        </tr>
+
+                                        </table>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+{% endblock %}

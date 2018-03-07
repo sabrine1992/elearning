@@ -1,0 +1,121 @@
+{%extends'::base1.html.twig' %}
+{% block body %}
+<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-1.jpg">
+        <!--
+    Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+    Tip 2: you can also add an image using data-image tag
+-->
+        <div class="logo">
+            <img src="{{asset('elearning/images/logo.png')}}" width="100" height="70" ><br>
+        </div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li>
+                    <a href="{{ path('formationsisco') }}">
+                        <i class="material-icons">library_books</i>
+                        <p>planing</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('formateurcisco') }}">
+                        <i class="material-icons">person</i>
+                        <p>le (s) formateur (s)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('prixcisco') }}">
+                        <i class="material-icons">content_paste</i>
+                        <p>Prix</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./icons.html">
+                        <i class="material-icons">bubble_chart</i>
+                        <p>Financement</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{{ path('dureecisco') }}">
+                        <i class="material-icons text-gray">notifications</i>
+                        <p>Durée</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./maps.html">
+                        <i class="material-icons">location_on</i>
+                        <p>Maps</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel">
+        <nav class="navbar navbar-transparent navbar-absolute">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group  is-empty">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="material-input"></span>
+                        </div>
+                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                            <i class="material-icons">search</i>
+                            <div class="ripple-container"></div>
+                        </button>
+                    </form>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <nav class="link-effect-2" id="link-effect-2">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="{{ path('index') }}">
+                                        <i class="material-icons">library_books</i>
+                                        <p>Accueil</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('catalogue') }}">
+                                        <i class="material-icons">library_books</i>
+                                        <p>Catalogue Formation</p>
+                                    </a>
+                                </li>
+                                <li><a href="{{ path('connexion') }}">
+                                        <i class="material-icons">person</i>
+                                        <p>connexion</p>
+                                    </a>
+                                </li>
+                                <li><a href="{{ path('inscrire') }}">
+                                        <i class="material-icons">person</i>
+                                        <p>s'inscrire</p>
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="tab-pane" id="duree">
+                                    <br>
+                                    <h3 >
+                                        <strong>Durée :</strong>
+                                        4 jours
+
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

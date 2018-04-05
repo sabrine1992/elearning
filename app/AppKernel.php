@@ -26,6 +26,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
@@ -66,5 +67,21 @@ class AppKernel extends Kernel
             $container->addObjectResource($this);
         });
         $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+    }
+
+    /**
+     * Checks if a given class name belongs to an active bundle.
+     *
+     * @param string $class A class name
+     *
+     * @return bool true if the class belongs to an active bundle, false otherwise
+     *
+     * @api
+     *
+     * @deprecated Deprecated since version 2.6, to be removed in 3.0.
+     */
+    public function isClassInActiveBundle($class)
+    {
+        // TODO: Implement isClassInActiveBundle() method.
     }
 }

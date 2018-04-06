@@ -11,25 +11,14 @@ use Doctrine\ORM\Mapping as ORM;
 class User extends BaseUser
 {
     /**
-     * @var integer
+     * @MongoDB\Id(strategy="auto")
      */
     protected $id;
 
-
-    /**
-     * @return int
-     */
-    public function getId()
+    public function __construct()
     {
-        return $this->id;
-    }
-
-    /**
-     * @param int $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
+        parent::__construct();
+        // your own logic
     }
 
 

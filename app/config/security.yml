@@ -19,12 +19,7 @@ security:
             form_login:
                 provider: fos_userbundle
                 csrf_token_generator: security.csrf.token_manager
-<<<<<<< HEAD
-=======
-                login_path: login
-                check_path: login
 
->>>>>>> a802f90e4bc4c0e3633c2479a9d7178f1b9201ee
             logout:       true
             anonymous:    true
 

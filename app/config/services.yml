@@ -33,3 +33,9 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+    main.admin.formation:
+        class: MainBundle\Admin\formationAdmin
+        arguments: [~, MainBundle\Entity\formation, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: formation }
+        public: true

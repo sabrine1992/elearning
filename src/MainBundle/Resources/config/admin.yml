@@ -4,3 +4,11 @@ sonata_block:
         # enable the SonataAdminBundle block
         sonata.admin.block.admin_list:
             contexts: [admin]
+
+services:
+    main.admin.formation:
+        class: MainBundle\Admin\formationAdmin
+        arguments: [~, MainBundle\Entity\formation, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin, label: formation }
+        public: true

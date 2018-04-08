@@ -1,0 +1,3 @@
+Sonata_admin :
+      template :
+           edit : MainBundle:Elearning:edit.html.twig

@@ -1,0 +1,21 @@
+MainBundle\Entity\formation:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\formationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        titre:
+            type: string
+            length: 255
+        plan:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

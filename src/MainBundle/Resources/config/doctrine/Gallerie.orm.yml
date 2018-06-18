@@ -1,0 +1,19 @@
+MainBundle\Entity\Gallerie:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\GallerieRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        image:
+            type: text
+            column: Image
+        titre:
+            type: string
+            length: 255
+            column: Titre
+    lifecycleCallbacks: {  }

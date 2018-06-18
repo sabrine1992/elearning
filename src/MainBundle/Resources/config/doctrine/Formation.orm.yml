@@ -1,0 +1,42 @@
+MainBundle\Entity\Formation:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\FormationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        image:
+            type: text
+        description:
+            type: string
+            length: 255
+            column: Description
+        titre:
+            type: text
+            column: Titre
+        objectif:
+            type: text
+            column: Objectif
+        programme:
+            type: text
+            column: Programme
+        formateur:
+            type: string
+            length: 255
+            column: Formateur
+        Prix:
+             type: text
+    oneToMany:
+        Ssession_formation:
+            targetEntity: MainBundle\Entity\Session_Formation
+            mappedBy: Cours
+    oneToMany:
+        cours:
+            targetEntity: MainBundle\Entity\cours
+            mappedBy: cours
+    lifecycleCallbacks:
+

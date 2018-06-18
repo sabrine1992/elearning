@@ -1,0 +1,55 @@
+<?php
+
+namespace MainBundle\Entity;
+
+/**
+ * xxx
+ */
+class xxx
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     */
+    private $datenaissance;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set datenaissance
+     *
+     * @param \DateTime $datenaissance
+     *
+     * @return xxx
+     */
+    public function setDatenaissance($datenaissance)
+    {
+        $this->datenaissance = $datenaissance;
+
+        return $this;
+    }
+
+    /**
+     * Get datenaissance
+     *
+     * @return \DateTime
+     */
+    public function getDatenaissance()
+    {
+        return $this->datenaissance;
+    }
+}
+

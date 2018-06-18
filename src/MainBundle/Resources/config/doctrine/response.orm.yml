@@ -1,0 +1,22 @@
+MainBundle\Entity\response:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\responseRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        reponse:
+            type: string
+            length: 255
+    manyToOne:
+        question:
+            targetEntity: MainBundle\Entity\question
+            inversedBy: response
+            joinColumn:
+                name: question_id
+                referencedColumnName: id
+    lifecycleCallbacks: {  }

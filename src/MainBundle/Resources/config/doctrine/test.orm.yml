@@ -1,0 +1,26 @@
+MainBundle\Entity\test:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\testRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+    oneToMany:
+        question:
+            targetEntity: MainBundle\Entity\question
+            mappedBy: test
+            joinColumn:
+                name: question_id
+                referencedColumnName: id
+    oneToMany:
+        Quiz:
+             targetEntity: MainBundle\Entity\Quiz
+             mappedBy: test
+
+    lifecycleCallbacks: {  }

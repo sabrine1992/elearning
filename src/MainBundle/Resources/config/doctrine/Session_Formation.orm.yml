@@ -1,0 +1,41 @@
+MainBundle\Entity\Session_Formation:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\Session_FormationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        dateDebut:
+            type: datetime
+            column: Date_Debut
+        dateFin:
+            type: datetime
+            column: Date_Fin
+        image:
+            type: text
+
+    manyToOne:
+        formation:
+             targetEntity: Formation
+             inversedBy: titre
+             joinColumn:
+                 name: formation_id
+                 referencedColumnName: id
+    manyToOne:
+        user:
+             targetEntity: UserBundle\Entity\User
+             inversedBy: username
+             joinColumn:
+                 name: user_id
+                 referencedColumnName: id
+    oneToMany:
+        participe:
+             targetEntity: MainBundle\Entity\Participersf
+             mappedBy: Session_Formation
+
+
+    lifecycleCallbacks: {  }

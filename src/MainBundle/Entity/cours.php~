@@ -1,0 +1,100 @@
+<?php
+
+namespace MainBundle\Entity;
+
+/**
+ * cours
+ */
+class cours
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $titreFormation;
+
+    /**
+     * @var string
+     */
+    private $cours;
+    private $formation;
+    /*
+     *  @ORM\Column(name="nbCommentaires", type="integer", nullable=true)
+     */
+    private $formation_id;
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set titreFormation
+     *
+     * @param string $titreFormation
+     *
+     * @return cours
+     */
+    public function setTitreFormation($titreFormation)
+    {
+        $this->titreFormation = $titreFormation;
+
+        return $this;
+    }
+
+    /**
+     * Get titreFormation
+     *
+     * @return string
+     */
+    public function getTitreFormation()
+    {
+        return $this->titreFormation;
+    }
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getFormation()
+    {
+        return $this->formation;
+    }
+
+    /**
+     * @param mixed $formation
+     */
+    public function setFormation($formation)
+    {
+        $this->formation = $formation;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFormationId()
+    {
+        return $this->formation_id;
+    }
+
+    /**
+     * @param mixed $formation_id
+     */
+    public function setFormationId($formation_id)
+    {
+        $this->formation_id = $formation_id;
+    }
+
+
+}
+

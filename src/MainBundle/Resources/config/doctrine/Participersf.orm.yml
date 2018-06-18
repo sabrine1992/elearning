@@ -1,0 +1,29 @@
+MainBundle\Entity\Participersf:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\ParticipersfRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        status:
+            type: string
+            length: 255
+    manyToOne:
+        user:
+             targetEntity: UserBundle\Entity\User
+             inversedBy: participe
+             joinColumn:
+                 name: user_id
+                 referencedColumnName: id
+        sessionformation:
+             targetEntity: MainBundle\Entity\Session_Formation
+             inversedBy: participe
+             joinColumn:
+                 name: sessionformation_id
+                 referencedColumnName: id
+
+    lifecycleCallbacks: {  }

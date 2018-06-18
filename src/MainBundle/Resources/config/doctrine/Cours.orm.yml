@@ -1,0 +1,25 @@
+MainBundle\Entity\Cours:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\CoursRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        cours:
+            type: text
+            column: Cours
+        titreformation:
+            type: string
+            length: 255
+    manyToOne:
+        formation:
+             targetEntity: Formation
+             inversedBy: titre
+             joinColumn:
+                 name: formation_id
+                 referencedColumnName: id
+    lifecycleCallbacks: {  }

@@ -1,0 +1,24 @@
+MainBundle\Entity\Quiz:
+    type: entity
+    table: null
+    repositoryClass: MainBundle\Repository\QuizRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    manyToOne:
+        question:
+             targetEntity: MainBundle\Entity\question
+             inversedBy: Quiz
+             joinColumn:
+                 name: question_id
+                 referencedColumnName: id
+        test:
+             targetEntity: MainBundle\Entity\test
+             inversedBy: Quiz
+             joinColumn:
+                 name: test_id
+                 referencedColumnName: id
+    lifecycleCallbacks: {  }

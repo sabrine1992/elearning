@@ -1,3 +1,32 @@
-user_homepage:
-    path:     /
-    defaults: { _controller: UserBundle:Default:index }
+apprenant:
+    path: /apprenant
+    defaults: { _controller: UserBundle:Apprenant:apprenant }
+formateur:
+    path: /formateur
+    defaults: { _controller: UserBundle:Formateur:formateur }
+affichercours:
+    path: /affichercours
+    defaults: { _controller: MainBundle:Cours:affichercours }
+compteformateur:
+    path: /compteformateur
+    defaults: { _controller: UserBundle:Compteformateur:compteformateur }
+compteapprenant:
+    path: /compteapprenant
+    defaults: { _controller: UserBundle:Compteapprenant:compteapprenant }
+admin_login:
+    path:  /admin/login
+    defaults: { _controller: FOSUserBundle:Security:login }
+admin_login_check:
+    path:  /admin/login_check
+    defaults: { _controller: FOSUserBundle:Security:check }
+admin_logout:
+    path:  /admin/logout
+    defaults: { _controller: FOSUserBundle:Security:logout }
+editerFormateur:
+    path:  /editerFormateur/{id}
+    defaults: { _controller: UserBundle:Formateur:editerFormateur }
+editerApprenant:
+    path:  /editerApprenant/{id}
+    defaults: { _controller: UserBundle:Apprenant:editerApprenant }
+
+

@@ -1,0 +1,264 @@
+{% extends'::base.html.twig' %}
+{% block body %}
+    <div class="header-top">
+        <div class="container">
+            <div class="bottom_header_left">
+                <p>
+                    <span class="fa fa-map-marker" aria-hidden="true"></span>Pépinière d'Entreprises bureau n°4 à côté
+                    de l'ISET de Beja
+                </p>
+            </div>
+            <div class="bottom_header_right">
+                <div class="bottom-social-icons">
+                    <a class="facebook" href="https://www.facebook.com/">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="twitter" href="https://twitter.com/">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a class="pinterest" href="#">
+                        <span class="fa fa-pinterest-p"></span>
+                    </a>
+                    <a class="linkedin" href="https://fr.linkedin.com/">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+
+                </div>
+                <div class="header-top-righ">
+                    <a href="{{ path('fos_user_security_login') }}">
+                        Déconnexion</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="content white">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{ path('index') }}">
+                            <img src="{{ asset('elearning/images/logo.png') }}" width="150" height="55">
+                        </a>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <nav class="link-effect-2" id="link-effect-2">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="{{ path('apprenant') }}" class="effect-3">Mon Espace</a>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resource
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="{{ path('catalogue') }}">Catalogue des Formations</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ path('session') }}">Session Formation</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="{{ path('contactapprenant') }}" class="effect-3">Contact</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">{{ app.user.username }}                                      <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="{{ path('compteapprenant') }}">Mon Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ path('fos_user_security_login') }}">Se déconnecter</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="search">
+                                                <input type="text" class="form-control input-sm" maxlength="64"
+                                                       placeholder="Chercher"/>
+                                                <button type="submit" class="btn btn-primary btn-sm">Chercher</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!--/.navbar-collapse-->
+                    <!--/.navbar-->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="inner_page_agile">
+
+    </div>
+    <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+            <ul class="short_ls">
+
+                <marquee><a href="{{ path('catalogue') }}"><h1>Parcourir la session des formations</h1></a></marquee>
+
+            </ul>
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="blog-cource">
+                    <div class="container">
+                        <div class="title-div">
+                            <h3 class="tittle">
+                                <span>M</span>on
+                                <span>P</span>rofile
+                            </h3>
+                            <div class="tittle-style">
+
+                            </div>
+                        </div>
+                        <div class="blog-info">
+                            <div class="col-xs-4 blog-grid-img">
+                                <img src="{{asset('elearning/images/c2.jpg')}}" class="img-responsive" alt=""/>
+                            </div>
+                            <div class="col-xs-8 blog-grid-text">
+                                <h6><font color="blue"> Identifiant:</font>  <b>{{ app.user.id }}</b></h6>
+                                <h6><font color="blue">Nom:</font><b>{{ app.user.username }}</b></h6>
+                                <h6><font color="blue">Prenom:</font><b>{{ app.user.prenom }}</b></h6>
+                                <h6><font color="blue">DateNaissance:</font><b>{{ app.user.DateNaissance|date("m/d/Y")}}</b></h6>
+                                <h6><font color="blue">Adresse:</font><b>{{ app.user.adresse }}</b></h6>
+                                <h6><font color="blue">Telephone:</font><b>{{ app.user.Telephone }}</b></h6>
+                                <h6><font color="blue">Sexe:</font><b>{{ app.user.Sexe}}</b></h6>
+                                <h6><font color="blue">Diplome:</font><b>{{ app.user.Diplome }}</b></h6>
+                                <h6><font color="blue">Niveau_Etude:</font><b>{{ app.user.NiveauEtude }}</b></h6>
+                                <p>Pour Modifier les donnees  --
+                                    <a href="{{ path('editerApprenant',{'id': app.user.id}) }}"><b>Cliquer ICI</b></a>
+
+                                </p>
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="mkl_footer">
+        <div class="sub-footer">
+            <div class="container">
+                <div class="mkls_footer_grid">
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Location:</h4>
+                        <p><b>Pépinière d'Entreprises bureau n°4 à côté de</b>
+                            <br> <b> l'ISET de Beja</b></p>
+                    </div>
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Mail Us:</h4>
+                        <p>
+                            <span><b>Tel : </b></span><b>(+216) 56 068 828 / 55 36 36 54</b></p>
+                        <p>
+                            <span>Email : </span>
+                            <a href="mailto:info@example.com"><b>contact@innovasys.com.tn </b></a>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Heures d'ouverture:</h4>
+                        <p><b>Jours de travail: 8h-18h</b></p>
+                        <p><b>dimanche</b>
+                            <span><b>(Fermé)</b></span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="botttom-nav-allah">
+                    <ul>
+                        <li>
+                            <a href="{{ path('index') }}"><b>Accueil</b></a>
+                        </li>
+                        <li>
+                            <a href="{{ path('presentation') }}"><b>Présentation</b></a>
+                        </li>
+                        <li>
+                            <a href="{{ path('catalogue') }}"><b>Catalogue Formation</b></a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('session') }}"><b>Session Formation</b></a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('gallerie') }}"><b>Gallerie</b></a>
+                        </li>
+                        <li>
+                            <a href="{{ path('contactapprenant') }}"><b>Contact</b></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- footer-button-info -->
+                <div class="footer-middle-thanks">
+
+                </div>
+                <!-- footer-button-info -->
+            </div>
+        </div>
+        <div class="footer-copy-right">
+            <div class="container">
+                <div class="allah-copy">
+                    <p>©  Tous les droits sont réservés | Concu par
+                        <a href="#">Njoumi Sabrine&& Amri Chayma</a>
+                    </p>
+                </div>
+                <div class="footercopy-social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-rss"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

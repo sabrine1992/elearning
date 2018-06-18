@@ -8,142 +8,63 @@ layout:
 
 index:
     path:     /index
-    defaults: { _controller: MainBundle:Layout:indexelearning }
+    defaults: { _controller: MainBundle:Layout:indexelearning}
+
+session:
+    path:     /sessionformation
+    defaults: { _controller: MainBundle:Sessionformation:afficher}
 
 presentation:
     path:     /presentation
     defaults: { _controller: MainBundle:Layout:presentation }
 
-connexion:
-    path:     /connexion
-    defaults: { _controller: MainBundle:Layout:connexion }
-
-ajouter:
-    path:     /ajouter
-    defaults: { _controller: MainBundle:Layout:ajouter}
 contacter:
     path:     /contacter
-    defaults: { _controller: MainBundle:Layout:contacter}
+    defaults: { _controller: MainBundle:Contact:contacter}
 catalogue:
     path:     /catalogue
-    defaults: { _controller: MainBundle:Layout:catalogue}
+    defaults: { _controller: MainBundle:Formation:catalogue}
+
 gallerie:
     path:     /gallerie
-    defaults: { _controller: MainBundle:Layout:gallerie}
-calendrier:
-    path:     /calendrier
-    defaults: { _controller: MainBundle:Layout:calendrier}
+    defaults: { _controller: MainBundle:Gallerie:affichergallerie}
 
 inscrire:
     path:     /inscrire
-    defaults: { _controller: MainBundle:Layout:inscrire}
+    defaults: { _controller: MainBundle:Inscrireformation:inscrire}
+
 formation:
-    path:     /formation
-    defaults: { _controller: MainBundle:Layout:formation}
-formateur:
-    path:     /formateur
-    defaults: { _controller: MainBundle:Layout:formateur}
-prix:
-    path:     /prix
-    defaults: { _controller: MainBundle:Layout:prix}
-duree:
-    path:     /duree
-    defaults: { _controller: MainBundle:Layout:duree}
-formationcisco:
-    path:     /formationcisco
-    defaults: { _controller: MainBundle:Layout:formationcisco}
-formateurcisco:
-    path:     /formateurcisco
-    defaults: { _controller: MainBundle:Layout:formateurcisco}
-prixcisco:
-    path:     /prixcisco
-    defaults: { _controller: MainBundle:Layout:prixcisco}
-dureecisco:
-    path:     /dureecisco
-    defaults: { _controller: MainBundle:Layout:dureecisco}
-formationmicrosoft:
-    path:     /formationmicrosoft
-    defaults: { _controller: MainBundle:Layout:formationmicrosoft}
-formateurmicrosoft:
-    path:     /formateurmicrosoft
-    defaults: { _controller: MainBundle:Layout:formateurmicrosoft}
-prixmicrosoft:
-    path:     /prixmicrosoft
-    defaults: { _controller: MainBundle:Layout:prixmicrosoft}
-dureemicrosoft:
-    path:     /dureemicrosoft
-    defaults: { _controller: MainBundle:Layout:dureemicrosoft}
-formationjee:
-    path:     /formationjee
-    defaults: { _controller: MainBundle:Layout:formationjee}
-formateurjee:
-    path:     /formateurjee
-    defaults: { _controller: MainBundle:Layout:formateurjee}
-prixjee:
-    path:     /prixjee
-    defaults: { _controller: MainBundle:Layout:prixjee}
-dureejee:
-    path:     /dureejee
-    defaults: { _controller: MainBundle:Layout:dureejee}
-formationwordpress:
-    path:     /formationwordpress
-    defaults: { _controller: MainBundle:Layout:formationwordpress}
-formateurwordpress:
-    path:     /formateurwordpress
-    defaults: { _controller: MainBundle:Layout:formateurwordpress}
-prixwordpress:
-    path:     /prixwordpress
-    defaults: { _controller: MainBundle:Layout:prixwordpress}
-dureewordpress:
-    path:     /dureewordpress
-    defaults: { _controller: MainBundle:Layout:dureewordpress}
-formationinfographie:
-    path:     /formationinfographie
-    defaults: { _controller: MainBundle:Layout:formationinfographie}
-formateurinfographie:
-    path:     /formateurinfographie
-    defaults: { _controller: MainBundle:Layout:formateurinfographie}
-prixinfographie:
-    path:     /prixinfographie
-    defaults: { _controller: MainBundle:Layout:prixinfographie}
-dureeinfographie:
-    path:     /dureeinfographie
-    defaults: { _controller: MainBundle:Layout:dureeinfographie}
-formationoracle:
-    path:     /formationoracle
-    defaults: { _controller: MainBundle:Layout:formationoracle}
-formateuroracle:
-    path:     /formateuroracle
-    defaults: { _controller: MainBundle:Layout:formateuroracle}
-prixoracle:
-    path:     /prixoracle
-    defaults: { _controller: MainBundle:Layout:prixoracle}
-dureeoracle:
-    path:     /dureeoracle
-    defaults: { _controller: MainBundle:Layout:dureeoracle}
-formationtoeic:
-    path:     /formationtoeic
-    defaults: { _controller: MainBundle:Layout:formationtoeic}
-formateurtoeic:
-    path:     /formateurtoeic
-    defaults: { _controller: MainBundle:Layout:formateurtoeic}
-prixtoeic:
-    path:     /prixtoeic
-    defaults: { _controller: MainBundle:Layout:prixtoeic}
-dureetoeic:
-    path:     /dureetoeic
-    defaults: { _controller: MainBundle:Layout:dureetoeic}
-formationlpic:
-    path:     /formationlpic
-    defaults: { _controller: MainBundle:Layout:formationlpic}
-formateurlpic:
-    path:     /formateurlpic
-    defaults: { _controller: MainBundle:Layout:formateurlpic}
-prixlpic:
-    path:     /prixlpic
-    defaults: { _controller: MainBundle:Layout:prixlpic}
-dureelpic:
-    path:     /dureelpic
-    defaults: { _controller: MainBundle:Layout:dureelpic}
-
-
+    path:     /formation/{id}
+    defaults: { _controller: MainBundle:Formation:afficher}
+cours:
+    path:     /cours
+    defaults: { _controller: MainBundle:Cours:ajouter}
+modifiercours:
+    path: /modifiercours/{id}
+    defaults: { _controller: MainBundle:Cours:editerCours}
+affichercourss:
+    path:     /affichercourss/{id}
+    defaults: { _controller: MainBundle:Affichercours:affichercours}
+affichercourssapprenant:
+    path:     /affichercourssapprenant/{id}
+    defaults: { _controller: MainBundle:Affichercoursapprenant:affichercoursapprenant}
+inscription:
+    path:     /inscription/{id}
+    defaults: { _controller: MainBundle:Sessionformation:inscription}
+apprenants:
+    path:     /apprenants/{id}
+    defaults: { _controller: MainBundle:Sessionformation:display}
+notif:
+    path:     /contact/notif
+    defaults: { _controller: MainBundle:Contact:countMsg}
+    options:
+        expose: true}
+contactapprenant:
+    path:     /contactapprenant
+    defaults: { _controller: MainBundle:Contactapprenant:contactapprenant}
+contactformateur:
+    path:     /contactformateur
+    defaults: { _controller: MainBundle:Contactformateur:contactformateur}
+mysession:
+    path:     /mysession
+    defaults: { _controller: MainBundle:Sessionformation:display}

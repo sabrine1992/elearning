@@ -1,14 +1,108 @@
+sonata_admin :
+    templates:
+        edit : MainBundle:Elearning:edit.html.twig
+
 sonata_block:
     default_contexts: [sonata_page_bundle]
     blocks:
         # enable the SonataAdminBundle block
         sonata.admin.block.admin_list:
             contexts: [admin]
-
 services:
-    main.admin.formation:
-        class: MainBundle\Admin\formationAdmin
-        arguments: [~, MainBundle\Entity\formation, SonataAdminBundle:CRUD]
+
+    main.Gestion_Formation.formation:
+        class: MainBundle\Gestion_Formation\FormationAdmin
+        arguments: [~, MainBundle\Entity\Formation, SonataAdminBundle:CRUD]
         tags:
-            - { name: sonata.admin, manager_type: orm, group: admin, label: formation }
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Formation, label: Formation }
         public: true
+    main.Gestion_Formation.session.formation:
+        class: MainBundle\Gestion_Formation\Session_FormationAdmin
+        arguments: [~, MainBundle\Entity\Session_Formation, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Formation, label: Session_Formation }
+        public: true
+    main.Gallerie.gallerie:
+        class: MainBundle\Gallerie\GallerieAdmin
+        arguments: [~, MainBundle\Entity\Gallerie, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gallerie, label: Gallerie }
+        public: true
+    main.Contact.contact:
+        class: MainBundle\Contact\contactAdmin
+        arguments: [~, MainBundle\Entity\Contact, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Contact, label: contact }
+        public: true
+    main.Gestion_Test_Blanc.test:
+        class: MainBundle\Gestion_Test_Blanc\testAdmin
+        arguments: [~, MainBundle\Entity\test, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Test_Blanc, label: test }
+        public: true
+    main.Gestion_Test_Blanc.question:
+        class: MainBundle\Gestion_Test_Blanc\questionAdmin
+        arguments: [~, MainBundle\Entity\question, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Test_Blanc, label: question }
+        public: true
+    main.Gestion_Test_Blancn.response:
+        class: MainBundle\Gestion_Test_Blanc\responseAdmin
+        arguments: [~, MainBundle\Entity\response, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Test_Blanc, label: response }
+        public: true
+
+    main.Gestion_Test_Blanc.quiz:
+        class: MainBundle\Gestion_Test_Blanc\QuizAdmin
+        arguments: [~, MainBundle\Entity\Quiz, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Test_Blanc, label: Quiz }
+        public: true
+    main.Gestion_Formation.participersf:
+        class: MainBundle\Gestion_Formation\ParticipersfAdmin
+        arguments: [~, MainBundle\Entity\Participersf, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Formation, label: Participersf }
+        public: true
+
+sonata_formatter:
+    default_formatter: text
+    formatters:
+        markdown:
+            service: sonata.formatter.text.markdown
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        #        - sonata.media.formatter.twig #keep this commented unless you are using media bundle.
+
+
+        text:
+            service: sonata.formatter.text.text
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        #        - sonata.media.formatter.twig
+
+
+        rawhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        #        - sonata.media.formatter.twig
+
+
+        richhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+        #        - sonata.media.formatter.twig
+
+
+        twig:
+            service: sonata.formatter.text.twigengine
+            extensions: [] # Twig formatter cannot have extensions
+
+

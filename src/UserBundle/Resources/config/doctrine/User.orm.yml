@@ -6,3 +6,45 @@ UserBundle\Entity\User:
             type: integer
             generator:
                 strategy: AUTO
+    fields:
+            adresse:
+                type: string
+                length: 255
+            Telephone:
+                type: string
+                length: 255
+            DateNaissance:
+                 type: date
+            Prenom:
+                 type: string
+                 length: 255
+            Sexe:
+                 type: string
+                 length: 255
+            Diplome:
+                 type: string
+                 length: 255
+                 nullable: true
+            Niveau_Etude:
+                 type: string
+                 length: 255
+                 nullable: true
+            Specialite:
+                 type: string
+                 length: 255
+                 nullable: true
+            type:
+                 type: string
+                 length: 255
+    oneToMany:
+            formation:
+                 targetEntity: MainBundle\Entity\Formation
+                 mappedBy: owner
+    oneToMany:
+            session_formation:
+                  targetEntity: MainBundle\Entity\Session_Formation
+                  mappedBy: Session_Formation
+    oneToMany:
+            participe:
+                  targetEntity: MainBundle\Entity\Participersf
+                  mappedBy: User

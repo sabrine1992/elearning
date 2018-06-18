@@ -1,0 +1,107 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<form action="{{ path('fos_user_registration_register') }}" method="POST" class="fos_user_registration_register" novalidate>
+    <div class="row">
+        <div class="input-field col s12">
+            {{ form_label(form.username) }}
+            {{ form_widget(form.username) }}
+        </div>
+        {{ form_errors(form.username) }}
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            {{ form_label(form.prenom) }}
+            {{ form_widget(form.prenom) }}
+        </div>
+        {{ form_errors(form.prenom) }}
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            {{ form_label(form.adresse) }}
+            {{ form_widget(form.adresse) }}
+        </div>
+        {{ form_errors(form.adresse) }}
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            {{ form_label(form.sexe) }}
+            {{ form_widget(form.sexe) }}
+        </div>
+        {{ form_errors(form.sexe) }}
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            {{ form_label(form.Telephone) }}
+            {{ form_widget(form.Telephone) }}
+        </div>
+        {{ form_errors(form.Telephone) }}
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            {{ form_label(form.DateNaissance) }}
+            {{ form_widget(form.DateNaissance) }}
+        </div>
+        {{ form_errors(form.DateNaissance) }}
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            {{ form_label(form.type) }}
+            {{ form_widget(form.type,{attr:{'required':'required'}}) }}
+        </div>
+        {{ form_errors(form.type) }}
+    </div>
+    <div class="apprenant">
+        <div class="row">
+            <div class="input-field col s12">
+                {{ form_label(form.diplome) }}
+                {{ form_widget(form.diplome) }}
+            </div>
+            {{ form_errors(form.diplome) }}
+        </div>
+
+        <div class="row no-padding">
+            <div class="input-field col s12">
+                {{ form_label(form.Niveau_Etude) }}
+                {{ form_widget(form.Niveau_Etude) }}
+            </div>
+            {{ form_errors(form.Niveau_Etude) }}
+        </div>
+    </div>
+    <div class="formateur">
+        <div class="row no-padding">
+            <div class="input-field col s12">
+                {{ form_label(form.Specialite) }}
+                {{ form_widget(form.Specialite) }}
+            </div>
+            {{ form_errors(form.Specialite) }}
+        </div>
+    </div>
+    <div class="row no-padding">
+        <div class="input-field col s12">
+            {{ form_label(form.email) }}
+            {{ form_widget(form.email) }}
+        </div>
+        {{ form_errors(form.email) }}
+    </div>
+    <div class="row no-padding">
+        <div class="input-field col s12">
+            {{ form_label(form.plainPassword.first) }}
+            {{ form_widget(form.plainPassword.first) }}
+        </div>
+        {{ form_errors(form.plainPassword.first) }}
+    </div>
+    <div class="row no-padding">
+        <div class="input-field col s12">
+            {{ form_label(form.plainPassword.second) }}
+            {{ form_widget(form.plainPassword.second) }}
+        </div>
+        {{ form_errors(form.plainPassword.second) }}
+    </div>
+
+
+    <div class="">
+        <input type="submit" value="Enregistrer">
+    </div>
+
+
+    {{ form_end(form) }}
+</form>

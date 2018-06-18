@@ -13,6 +13,27 @@ services:
         # this means you cannot fetch services directly from the container via $container->get()
         # if you need to do this, you can override this setting on individual services
         public: false
+    MainBundle\EventListener\ImageUploadListener:
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
+    MainBundle\EventListener\ImagesessionUploadListener:
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
+    MainBundle\EventListener\CoursUploadListener:
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
+    MainBundle\EventListener\ImagegallerieUploadListener:
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
+    MainBundle\EventListener\SessionFormationListener:
+        tags:
+            - { name: doctrine.event_listener, event: postLoad }
+
+
 
     # makes classes in src/AppBundle available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
@@ -33,9 +54,93 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
-    main.admin.formation:
-        class: MainBundle\Admin\formationAdmin
-        arguments: [~, MainBundle\Entity\formation, SonataAdminBundle:CRUD]
+
+    MainBundle\Service\FileUploader:
+        arguments:
+            $targetDirectory: '%image_directory%'
+    MainBundle\Service\FileUploader:
+            arguments:
+                $targetDirectory: '%cour_directory%'
+    MainBundle\Service\FileUploader:
+            arguments:
+                $targetDirectory: '%gallerie_directory%'
+
+    app.form.registration:
+        class: UserBundle\Form\RegistrationType
         tags:
-            - { name: sonata.admin, manager_type: orm, group: admin, label: formation }
+            - { name: form.type, alias: app_user_registration }
+
+    redirect_register_user.registration.completed:
+        class: UserBundle\Handler\RegistrationConfirmListener
+        arguments: ['@router']
+
+
+
+
+    main.Gestion_Formation.formation:
+        class: MainBundle\Gestion_Formation\FormationAdmin
+        arguments: [~, MainBundle\Entity\Formation, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Formation, label: Cours }
         public: true
+    main.Gestion_Formation.session.formation:
+        class: MainBundle\Gestion_Formation\Session_FormationAdmin
+        arguments: [~, MainBundle\Entity\Session_Formation, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Formation, label: Session_Formation }
+        public: true
+    main.Gallerie.gallerie:
+        class: MainBundle\Gallerie\GallerieAdmin
+        arguments: [~, MainBundle\Entity\Gallerie, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gallerie, label: Gallerie }
+        public: true
+    main.Contact.contact:
+        class: MainBundle\Contact\contactAdmin
+        arguments: [~, MainBundle\Entity\contact, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Contact, label: contact }
+        public: true
+    main.Gestion_Test_Blanc.test:
+        class: MainBundle\Gestion_Test_Blanc\testAdmin
+        arguments: [~, MainBundle\Entity\test, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Test_Blanc, label: test }
+        public: true
+    main.Gestion_Test_Blanc.question:
+        class: MainBundle\Gestion_Test_Blanc\questionAdmin
+        arguments: [~, MainBundle\Entity\question, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Test_Blanc, label: question }
+        public: true
+    main.Gestion_Test_Blanc.response:
+        class: MainBundle\Gestion_Test_Blanc\responseAdmin
+        arguments: [~, MainBundle\Entity\response, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Test_Blanc, label: response }
+        public: true
+    main.Gestion_Test_Blanc.quiz:
+        class: MainBundle\Gestion_Test_Blanc\QuizAdmin
+        arguments: [~, MainBundle\Entity\Quiz, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Test_Blanc, label: Quiz }
+        public: true
+
+
+    user.Gestion_Utilisateur.user:
+        class: UserBundle\Gestion_Utilisateur\UserAdmin
+        arguments: [~, UserBundle\Entity\User, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Utilisateur, label: User }
+        public: true
+    main.Gestion_Formation.participersf:
+        class: MainBundle\Gestion_Formation\ParticipersfAdmin
+        arguments: [~, MainBundle\Entity\Participersf, SonataAdminBundle:CRUD]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Gestion_Formation, label: Participersf }
+        public: true
+
+    redirect.after.login:
+        class: UserBundle\Handler\AfterLoginRedirection
+        arguments: ['@router','@service_container']
+

@@ -1,0 +1,248 @@
+{% extends'::base.html.twig' %}
+{% block body%}
+    <div class="header-top">
+        <div class="container">
+            <div class="bottom_header_left">
+                <p>
+                    <span class="fa fa-map-marker" aria-hidden="true"></span>Pépinière d'Entreprises bureau n°4 à côté de l'ISET de Beja
+                </p>
+            </div>
+            <div class="bottom_header_right">
+                <div class="bottom-social-icons">
+                    <a class="facebook" href="#">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="twitter" href="#">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a class="pinterest" href="#">
+                        <span class="fa fa-pinterest-p"></span>
+                    </a>
+                    <a class="linkedin" href="#">
+                        <span class="fa fa-linkedin"></span>
+                    </a>
+                </div>
+                <div class="header-top-righ">
+                    <a href="{{ path('fos_user_security_login') }}">
+                        <span class="fa fa-sign-out" aria-hidden="true"></span>Connexion</a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="content white">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{ path('index') }}" >
+                            <img src="{{asset('elearning/images/logo.png')}}" width="150" height="55">
+                        </a>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <nav class="link-effect-2" id="link-effect-2">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="{{ path('index') }}" class="effect-3">Accueil</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('presentation') }}" class="effect-3">A propos</a>
+                                </li>
+
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Formation
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="{{ path('catalogue') }}">Catalogue Formation</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ path('session') }}">Session  Formation</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="{{ path('gallerie') }}" class="effect-3">Gallerie</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('contacter') }}" class="effect-3">Contact</a>
+                                </li>
+                                <li>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="search">
+                                                <input type="text" class="form-control input-sm" maxlength="64" placeholder="Chercher" />
+                                                <button type="submit" class="btn btn-primary btn-sm">Chercher</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--/.navbar-collapse-->
+                    <!--/.navbar-->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="inner_page_agile">
+
+    </div>
+
+    <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+            <ul class="short_ls">
+                <li>
+                    <a href="{{ path('index') }}">Accueil</a>
+                    <span>| |</span>
+                </li>
+                <li>Connexion</li>
+            </ul>
+        </div>
+    </div>
+    <!-- //short-->
+    <div class="register-form-main">
+        <div class="container">
+            <div class="title-div">
+                <h3 class="tittle">
+                    <span>F</span>ormulaire de
+                    <span>C</span>onnexion
+                </h3>
+                <div class="tittle-style">
+
+                </div>
+            </div>
+            <div class="login-form">
+
+
+                <div class="">
+
+                    {{ include('@FOSUser/Security/login_content.html.twig') }}
+
+                    <div class="login-agileits-bottom wthree">
+                        <h6>
+                            <a href="{{ path('fos_user_change_password') }}">mot de passe oublié?
+                            </a>
+                        </h6>
+                    </div>
+                    <div class="register-forming">
+                        <p>Pour enregistrer un nouveau compte --
+                            <a href="{{ path('fos_user_registration_register') }}">Cliquez ici
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="mkl_footer">
+        <div class="sub-footer">
+            <div class="container">
+                <div class="mkls_footer_grid">
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Location:</h4>
+                        <p><b>Pépinière d'Entreprises bureau n°4 à côté de</b>
+                            <br>  <b>l'ISET de Beja</b></p>
+                    </div>
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Mail Us:</h4>
+                        <p>
+                            <span><b>Tel : </b></span><b>(+216) 56 068 828 / 55 36 36 54</b></p>
+                        <p>
+                            <span>Email : </span>
+                            <a href="mailto:info@example.com"><b>contact@innovasys.com.tn</b> </a>
+                        </p>
+                    </div>
+                    <div class="col-xs-4 mkls_footer_grid_left">
+                        <h4>Heures d'ouverture:</h4>
+                        <p><b>Jours de travail: 8h-18h</b></p>
+                        <p><b>dimanche</b>
+                            <span><b>(Fermé)</b></span>
+                        </p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="botttom-nav-allah">
+                    <ul>
+                        <li>
+                            <a href="{{ path('index') }}"><b>Accueil</b></a>
+                        </li>
+                        <li>
+                            <a href="{{ path('presentation') }}"><b>Présentation</b></a>
+                        </li>
+                        <li>
+                            <a href="{{ path('catalogue') }}"><b>Catalogue Formation</b></a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('session') }}"><b>Session  Formation</b></a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('gallerie') }}"><b>Gallerie</b></a>
+                        </li>
+                        <li>
+                            <a href="{{ path('contacter') }}"><b>Contact</b></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- footer-button-info -->
+                <div class="footer-middle-thanks">
+                </div>
+                <!-- footer-button-info -->
+            </div>
+        </div>
+        <div class="footer-copy-right">
+            <div class="container">
+                <div class="allah-copy">
+                    <p>© Tous les droits sont réservés | Concu par
+                        <a href="#"> Njoumi Sabrine && Amri Chayma </a>
+                    </p>
+                </div>
+                <div class="footercopy-social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-rss"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+{% endblock%}

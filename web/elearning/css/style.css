@@ -3,7 +3,9 @@ body {
     margin: 0;
     font-size: 100%;
     background: #fff;
+    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+
 }
 
 body a {
@@ -295,7 +297,7 @@ label {
 .dropdown-menu>.active>a:hover,
 .dropdown-menu>.active>a:focus {
     color: #f2170b;
-    background-color: #fff;
+    background-color: #2310f2;
 }
 
 .multi-column-dropdown {
@@ -306,7 +308,7 @@ label {
     display: block;
     clear: both;
     line-height: 1.428571429;
-    color: #333;
+    color: #010108;
     white-space: normal;
 }
 
@@ -326,7 +328,7 @@ label {
         margin: 0;
         margin-left: 0em;
         width: 100%;
-        background: #eee;
+        background: #2310f2;
         margin-top: 1em;
     }
 }
@@ -393,7 +395,7 @@ label {
     letter-spacing: 3px;
     font-size: 13px;
     font-weight: 300;
-    color: #fff;
+    color: #2310f2;
 }
 
 .carousel-indicators {
@@ -863,7 +865,7 @@ h3.tittle span {
 
 .nbs-flexisel-inner {
     overflow: hidden;
-    margin: 0px auto;
+    margin: 0px;
 }
 
 .nbs-flexisel-item {
@@ -973,7 +975,7 @@ h3.tittle span {
 }
 
 a.button-style {
-    color: #fff;
+    color: #cb1906;
     background: #2310f2;
     border: none;
     padding: 10px 31px;
@@ -1026,7 +1028,7 @@ a.button-style:hover {
 }
 
 .mkls_footer_grid_left p {
-    color: #e0e0e0;
+    color: #010108;
 }
 
 .mkls_footer_grid_left p a {
@@ -1041,8 +1043,8 @@ a.button-style:hover {
 
 .botttom-nav-allah {
     margin: 35px 0 45px;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-top: 1px solid rgba(203, 25, 6, 0.4);
+    border-bottom: 1px solid rgba(203, 25, 6, 0.4);
     padding: 10px 0;
 }
 
@@ -1058,13 +1060,13 @@ a.button-style:hover {
 
 .botttom-nav-allah ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #010108;
     font-size: 14px;
     letter-spacing: 2px;
 }
 
 .botttom-nav-allah ul li a:hover {
-    color: #0a0bf3;
+    color: #2310f2;
 }
 
 .footer-middle-thanks h2 {
@@ -1118,12 +1120,12 @@ a.button-style:hover {
 }
 
 .footercopy-social ul li a {
-    color: #333;
+    color: #2310f2;
     text-align: center;
 }
 
 .footercopy-social ul li a span.fa.fa-facebook {
-    background: #3b5998;
+    background: #2310f2;
 }
 
 .footercopy-social ul li a span.fa.fa-facebook:hover {
@@ -1297,7 +1299,7 @@ li.aitsaitsresumewthreeli-1 {
 .aitsresumethree h4.title2 {
     width: 14%;
     font-size: 1.6em;
-    color: #000;
+    color: #cb1906;
 }
 
 .work-left {
@@ -1515,16 +1517,16 @@ label.header {
 
 .register-form input:-moz-placeholder {
     /* Firefox 18- */
-    color: #5a5656;
+    color: #2310f2;
 }
 
 .register-form input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #5a5656;
+    color: #2310f2;
 }
 
 .register-form input:-ms-input-placeholder {
-    color: #5a5656;
+    color: #2310f2;
 }
 
 
@@ -1537,7 +1539,7 @@ label.header {
 /*-- gallery --*/
 
 .agile-figcaption {
-    background: #000;
+    background: #2310f2;
     text-align: center;
     padding: 12px 0;
     -webkit-transition: .5s all;
@@ -1547,7 +1549,7 @@ label.header {
 }
 
 .agile-figcaption:hover {
-    background: #ef5861;
+    background: #cb1906;
     -webkit-transition: .5s all;
     -moz-transition: .5s all;
     transition: .5s all;
@@ -1562,7 +1564,7 @@ label.header {
 .agile-figcaption h4 {
     font-size: 22px;
     margin-bottom: .3em;
-    color: #fff;
+    color: #010108;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -1583,7 +1585,7 @@ label.header {
 }
 
 .contact-text1 h4 {
-    color: #000;
+    color: #2310f2;
     font-size: 30px;
     margin-bottom: 18px;
     letter-spacing: 1px;
@@ -1677,7 +1679,7 @@ label.header {
 
 .contact-lsleft input[type="submit"] {
     outline: none;
-    color: #000;
+    color: #2310f2;
     padding: 10px 30px;
     font-size: 16px;
     letter-spacing: 1px;
@@ -1735,11 +1737,11 @@ label.header {
 .login-form input[type="email"] {
     outline: none;
     font-size: 15px;
-    color: #000;
+    color: #2310f2;
     padding: 12px;
     margin-bottom: 20px;
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid #2310f2;
     -webkit-appearance: none;
     display: block;
     background: transparent;
@@ -1752,7 +1754,7 @@ label.header {
 
 .login-form p {
     font-size: 15px;
-    color: #000;
+    color: #2310f2;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
@@ -1762,7 +1764,7 @@ label.header {
 
 .anim {
     font-size: 15px;
-    color: #000;
+    color: #2310f2;
     cursor: pointer;
     position: relative;
     margin: 10px 0 25px;
@@ -1820,20 +1822,20 @@ input[type="checkbox"] {
 
 @keyframes rippling {
     50% {
-        border-left-color: #000;
+        border-left-color: #2310f2;
     }
     100% {
-        border-bottom-color: #000;
-        border-left-color: #000;
+        border-bottom-color: #2310f2;
+        border-left-color: #2310f2;
     }
 }
 
 .login-form {
     width: 60%;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(35, 16, 242, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(35, 16, 242, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(35, 16, 242, 0.75);
     padding: 50px;
 }
 
@@ -1859,7 +1861,7 @@ input[type="checkbox"] {
 }
 
 .login-form input[type="submit"]:hover {
-    background: #000;
+    background: #2310f2;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -1879,7 +1881,7 @@ input[type="checkbox"] {
 }
 
 .login-agileits-bottom h6 a {
-    color: #000;
+    color: #2310f2;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1947,7 +1949,7 @@ input[type="checkbox"] {
 }
 
 .icon-box:hover {
-    background: #000;
+    background: #2310f2;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1990,7 +1992,7 @@ input[type="checkbox"] {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #777;
+    color: #2310f2;
 }
 
 .codes .bs-glyphicons .glyphicon-class {
@@ -2010,7 +2012,7 @@ h3.icon-subheading {
 h3.agileits-icons-title {
     text-align: center;
     font-size: 33px;
-    color: #222222;
+    color: #2310f2;
     font-weight: 600;
     letter-spacing: 2px;
 }
@@ -2022,7 +2024,7 @@ h3.agileits-icons-title {
 .icon-box i {
     margin-right: 10px !important;
     font-size: 20px !important;
-    color: #282a2b !important;
+    color: #2310f2 !important;
 }
 
 .bs-glyphicons li {
@@ -2042,7 +2044,7 @@ h3.agileits-icons-title {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 24px;
-    color: #282a2b;
+    color: #2310f2;
 }
 
 .glyphicon {
@@ -2166,7 +2168,7 @@ li.list-group-item1 {
 
 .xs h3,
 h3.m_1 {
-    color: #000;
+    color: #2310f2;
     font-size: 1.7em;
     font-weight: 300;
     margin-bottom: 1em;
@@ -3068,7 +3070,7 @@ h3.title-w3l.w3l-2:before {
         margin: 0;
         width: 100%;
         float: none;
-        background: rgba(0, 0, 0, 0.73);
+        background: rgba(35, 16, 242, 0.73);
         padding: 0;
     }
     .navbar-nav>li {

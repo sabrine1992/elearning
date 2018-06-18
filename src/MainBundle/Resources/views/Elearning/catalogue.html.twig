@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <div class="header-top-righ">
-                    <a href="{{ path('connexion') }}">
+                    <a href="{{ path('fos_user_security_login') }}">
                         <span class="fa fa-sign-out" aria-hidden="true"></span>Connexion</a>
                 </div>
                 <div class="clearfix"> </div>
@@ -58,15 +58,15 @@
                                 </li>
 
                                 <li class="dropdown">
-                                    <a href="{{ path('formation') }}" class="dropdown-toggle" data-toggle="dropdown">Formation
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Formation
                                         <span class="caret"></span>
                                     </a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li class="active">
+                                        <li>
                                             <a href="{{ path('catalogue') }}">Catalogue Formation</a>
                                         </li>
                                         <li>
-                                            <a href="codes.html">Calendrier Formation</a>
+                                            <a href="{{ path('session') }}">Session Formation</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -130,205 +130,43 @@
         <div class="content">
             <div class="container">
                 <div class="row">
+                    {% block ocplatform_body %}
+                    {% for f in form %}
                     <div class="col-xs-12 col-sm-4">
                         <div class="card">
                             <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/01.jpg')}}" >
-                            </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="#"> Android
-                                    </a>
-                                </h4>
-                                <p class="">
-                                    est le système d'exploitation mobile crée par Google,Google a souhaité, en développant ...
 
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="{{ path('formation') }}"  class="btn btn-link btn-block">
-                                    En savoir plus
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/02.jpg')}}" >
-                            </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="#"> CISCO
-                                    </a>
-                                </h4>
-                                <p class="">
-                                    Cisco Networking Academy est une initiative pédagogique novatrice ayant pour but de créer un pool ...
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="{{ path('formationcisco') }}" class="btn btn-link btn-block">
-                                    En savoir plus
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/03.jpg')}}" >
-                            </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="#">Microsoft Office
-                                    </a>
-                                </h4>
-                                <p class="">
-                                    est une suite bureautique propriétaire de la société Microsoft fonctionnant avec les plates-formes fixes...
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="{{ path('formationmicrosoft') }}" class="btn btn-link btn-block">
-                                    En savoir plus
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/04.jpg')}}" >
-                            </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="#"> JAVA J2EE
-                                    </a>
-                                </h4>
-                                <p class="">
-                                    est un langage de programmation et une plate-forme informatique qui ont été créés...
+                                <img src="{{ asset('elearning/images/') }}{{ f.image }}" width="50" height="50"/>
 
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="{{ path('formationjee') }}" class="btn btn-link btn-block">
-                                    En savoir plus
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/05.jpg')}}" >
                             </a>
                             <div class="card-content">
                                 <h4 class="card-title">
-                                    <a href="#">Wordpress
-                                    </a>
-                                </h4>
-                                <p class="">
-                                    est un CMS (pour Content Management System ou encore SGC, en français, pour...
-
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="{{ path('formationwordpress') }}" class="btn btn-link btn-block">
-                                    En savoir plus
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/06.png')}}" >
-                            </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="#">Infographie
-                                    </a>
-                                </h4>
-                                <p class="">
-                                    est le domaine de la création d'images numériques assistée par ordinateur Cette activité est ...
-
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="{{ path('formationinfographie') }}" class="btn btn-link btn-block">
-                                    En savoir plus
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/07.JPG')}}" >
-                            </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="#">Oracle
-                                    </a>
-                                </h4>
-                                <p class="">
-                                    Oracle Database est un système de gestion de base de données relationnelle ...
-
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="{{ path('formationoracle') }}" class="btn btn-link btn-block">
-                                    En savoir plus
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/08.png')}}" >
-                            </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="#">TOEIC
-                                    </a>
-                                </h4>
-                                <p class="">
-                                    Test of English for International Communication) est un test standardisé reconnu à l'échelle internationale...
-
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="{{ path('formationtoeic') }}" class="btn btn-link btn-block">
-                                    En savoir plus
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="#">
-                                <img src="{{asset('elearning/images/09.png')}}" >
-                            </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="#">LPIC
+                                    <a href="#">{{ f.Titre|raw}}
                                     </a>
                                 </h4>
                                 <p class="">
 
-                                    est un organisme à but non lucratif qui propose des certifications pour des administrateurs système...
+                                    {{ f.description|raw }}
                                 </p>
                             </div>
                             <div class="card-read-more">
-                                <a href="{{ path('formationlpic')  }}" class="btn btn-link btn-block">
+                                <a href="{{ path('formation',{'id':f.id}) }}" class="btn btn-link btn-block">
                                     En savoir plus
                                 </a>
                             </div>
                         </div>
                     </div>
+
+
+                    {% else %}
+                    <p>Pas (encore !) d'annonces
+                        {% endfor %}
+                        {% endblock %}
+
                 </div>
             </div>
         </div>
+
 
     </div>
 </div>
@@ -341,23 +179,23 @@
                 <div class="mkls_footer_grid">
                     <div class="col-xs-4 mkls_footer_grid_left">
                         <h4>Location:</h4>
-                        <p>Pépinière d'Entreprises bureau n°4 à côté de
-                            <br>  l'ISET de Beja</p>
+                        <p><b>Pépinière d'Entreprises bureau n°4 à côté de</b>
+                            <br> <b> l'ISET de Beja</b></p>
                     </div>
                     <div class="col-xs-4 mkls_footer_grid_left">
                         <h4>Mail Us:</h4>
                         <p>
-                            <span>Tel : </span>(+216) 56 068 828 / 55 36 36 54</p>
+                            <span><b>Tel : </b></span><b>(+216) 56 068 828 / 55 36 36 54</b></p>
                         <p>
-                            <span>Email : </span>
-                            <a href="mailto:info@example.com">contact@innovasys.com.tn </a>
+                            <span><b>Email : </b></span>
+                            <a href="mailto:info@example.com"><b>contact@innovasys.com.tn </b></a>
                         </p>
                     </div>
                     <div class="col-xs-4 mkls_footer_grid_left">
                         <h4>Heures d'ouverture:</h4>
-                        <p>Jours de travail: 8h-18h</p>
-                        <p>dimanche
-                            <span>(Fermé)</span>
+                        <p><b>Jours de travail: 8h-18h</b></p>
+                        <p><b>dimanche</b>
+                            <span><b>(Fermé)</b></span>
                         </p>
                     </div>
                     <div class="clearfix"> </div>
@@ -365,30 +203,29 @@
                 <div class="botttom-nav-allah">
                     <ul>
                         <li>
-                            <a href="{{ path('index') }}">Accueil</a>
+                            <a href="{{ path('index') }}"><b>Accueil</b></a>
                         </li>
                         <li>
-                            <a href="{{ path('presentation') }}">Présentation</a>
+                            <a href="{{ path('presentation') }}"><b>Présentation</b></a>
                         </li>
                         <li>
-                            <a href="{{ path('catalogue') }}">Catalogue Formation</a>
-                        </li>
-
-                        <li>
-                            <a href="{{ path('calendrier') }}">Calendrir Formation</a>
+                            <a href="{{ path('catalogue') }}"><b>Catalogue Formation</b></a>
                         </li>
 
                         <li>
-                            <a href="{{ path('gallerie') }}">Gallerie</a>
+                            <a href="{{ path('session') }}"><b>Session Formation</b></a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path('gallerie') }}"><b>Gallerie</b></a>
                         </li>
                         <li>
-                            <a href="{{ path('contacter') }}">Contact</a>
+                            <a href="{{ path('contacter') }}"><b>Contact</b></a>
                         </li>
                     </ul>
                 </div>
                 <!-- footer-button-info -->
                 <div class="footer-middle-thanks">
-                    <h2>Merci d'avoir regardé </h2>
                 </div>
                 <!-- footer-button-info -->
             </div>
@@ -396,8 +233,8 @@
         <div class="footer-copy-right">
             <div class="container">
                 <div class="allah-copy">
-                    <p>© 2018 Meilleure formation. Tous les droits sont réservés | Concu par
-                        <a href="http://w3layouts.com/">Njoumi Sabrine&& Amri Chayma</a>
+                    <p>© Tous les droits sont réservés | Concu par
+                        <a href="#">Njoumi Sabrine&& Amri Chayma</a>
                     </p>
                 </div>
                 <div class="footercopy-social">

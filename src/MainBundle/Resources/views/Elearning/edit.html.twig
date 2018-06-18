@@ -2,11 +2,18 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('js/ckeditor/adapter/jquery.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/ckeditor/ckeditor.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('elearning/js/ckeditor/adapter/jquery.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('elearning/js/ckeditor/ckeditor.js') }}" type="text/javascript"></script>
     <script type="text/javascript">
         $(function() {
             $('textarea.ckeditor').ckeditor();
         });
     </script>
+{% endblock %}
+{% block jquery %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/sonataadmin/jquery/notif.js') }}"></script>
+    <script src="{{ asset('bundles/sonataadmin/jquery/jquery-1.11.1.min.js') }}"></script>
+
+
 {% endblock %}

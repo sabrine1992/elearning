@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -6,9 +5,9 @@
     <title>Innovasys Technologie</title>
     <!-- meta-tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Soft Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -21,41 +20,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel='stylesheet prefetch' href="{{ asset('elearning//bootstrap.min.css') }}">
+    <link href="{{ asset('elearning/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css">
+    <script src="{{ asset('elearning/js/jquery-1.11.1.min.js') }}"></script>
+
+    <script src="{{ asset('elearning/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('elearning/bootstrap.js') }}"></script>
+
+    <link href="{{ asset('elearning/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css">
+    <script src="{{ asset('elearning/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('elearning/js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ asset('elearning/js/index.js') }}"></script>
+
     <!-- //meta-tags -->
-    <link href="{{asset('elearning/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{asset('elearning/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{asset('elearning/css/style1.css')}}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{asset('elearning/css/style2.css')}}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{asset('elearning/css/style3.css')}}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ asset('elearning/css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('elearning/css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('elearning/css/style1.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('elearning/css/style2.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('elearning/css/style3.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('elearning/css/style4.css') }}" rel="stylesheet" type="text/css" media="all"/>
     <!-- font-awesome -->
-    <link href="{{asset('elearning/css/font-awesome.css')}}" rel="stylesheet">
+    <link href="{{ asset('elearning/css/font-awesome.css') }}" rel="stylesheet">
     <!-- fonts -->
     <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+          rel="stylesheet">
 </head>
 
 <body>
 <!-- header -->
 
-    {% block body %} {% endblock %}
+{% block body %} {% endblock %}
 
 <!--/footer -->
 
 <!-- js files -->
 <!-- js -->
-<script src="{{asset('elearning/js/jquery-2.1.4.min.js')}}"></script>
+<script src="{{ asset('elearning/js/jquery-2.1.4.min.js') }}"></script>
 <!-- bootstrap -->
-<script src="{{asset('elearning/js/bootstrap.js')}}"></script>
+<script src="{{ asset('elearning/js/bootstrap.js') }}"></script>
 <!-- stats numscroller-js-file -->
-<script src="{{asset('elearning/js/numscroller-1.0.js')}}"></script>
+<script src="{{ asset('elearning/js/numscroller-1.0.js') }}"></script>
 <!-- //stats numscroller-js-file -->
 
 <!-- Flexslider-js for-testimonials -->
@@ -86,28 +92,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     });
 </script>
-<script src="{{asset('elearning/js/jquery.flexisel.js')}}"></script>
+<script src="{{ asset('elearning/js/jquery.flexisel.js') }}"></script>
 <!-- //Flexslider-js for-testimonials -->
 <!-- smooth scrolling -->
-<script src="{{asset('elearning/js/SmoothScroll.min.js')}}"></script>
-<script src="{{asset('elearning/js/move-top.js')}}"></script>
-<script src="{{asset('elearning/js/easing.js')}}"></script>
+<script src="{{ asset('elearning/js/SmoothScroll.min.js') }}"></script>
+<script src="{{ asset('elearning/js/move-top.js') }}"></script>
+<script src="{{ asset('elearning/js/easing.js') }}"></script>
 <!-- here stars scrolling icon -->
 <script>
     $(document).ready(function () {
         /*
-            var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-            };
-        */
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
 
         $().UItoTop({
             easingType: 'easeOutQuart'
         });
 
+
+        $('.formateur').css(
+            'display', 'none'
+        );
+        $('.apprenant').css(
+            'display', 'none'
+        );
+        $('#fos_user_registration_form_type_0').click(function () {
+            $('#fos_user_registration_form_diplome').removeAttr('required');
+            $('#fos_user_registration_form_Niveau_Etude').removeAttr('required');
+            $('fos_user_registration_form_Specialite').attr('required', true);
+            $('.formateur').css(
+                'display', 'block'
+            );
+            $('.apprenant').css(
+                'display', 'none'
+            );
+        });
+        $('#fos_user_registration_form_type_1').click(function () {
+            $('#fos_user_registration_form_diplome').attr('required', true);
+            $('#fos_user_registration_form_Niveau_Etude').attr('required', true);
+            $('fos_user_registration_form_Specialite').removeAttr('required');
+            $('.formateur').css(
+                'display', 'none'
+            );
+            $('.apprenant').css(
+                'display', 'block'
+            );
+        });
     });
 </script>
 <!-- //here ends scrolling icon -->
@@ -117,3 +152,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </body>
 
 </html>
+
